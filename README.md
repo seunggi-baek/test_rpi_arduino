@@ -32,6 +32,12 @@ arduino : first2.ino
 python : first3.py
 arduino : first3.ino
 
-## ADD Sample (Pin을 이용한 UART 통신)
+## ADD Sample (Pin을 이용한 UART 통신 - 2채널 단방향 레벨변환컨버터 이용)
 arduino : serial-arduino-uart.ino
+라즈베리파이 : vcc(2), gnd(6), tx(8), rx(10)
+아두이노 : vcc(5v), gnd(gnd), tx(3), rx(2)
+2채널 단방향 레벨변환 컨버터 
+ - 라즈베리파이 : vcc(chan2-TXI), gnd(LV-GND), tx(chan1-TXI), rx(chan1-RXO)
+ - 아두이노 : vcc(chan2-TXO), gnd(HV-GND), tx(chan1-RXI), rx(chan1-TXO)
+ 
 
