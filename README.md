@@ -32,5 +32,6 @@ arduino : first2.ino
 python : first3.py
 arduino : first3.ino
 
-
+## ADD Sample (Pin을 이용한 UART 통신)
+arduino : serial-arduino-uart.ino
 
